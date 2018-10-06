@@ -1,6 +1,6 @@
 import * as React from "react";
-import styled from "styled-components";
-import { Text, View } from "react-native";
+import styled from "styled-components/native";
+import { Text } from "react-native";
 
 export default class App extends React.Component<{}> {
   render() {
@@ -14,9 +14,9 @@ export default class App extends React.Component<{}> {
   }
 }
 
-const Container = styled(View)`
+const Container = styled.View`
   flex: 1;
-  background-color: "#fff";
-  align-items: "center";
-  justify-content: "center";
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
 `;

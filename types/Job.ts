@@ -2,7 +2,8 @@ export interface Job {
   name: string;
   description: string;
   hourlyRate: number;
-  timeEntries: TimeEntry[];
+  currentTimeEntry: TimeEntry;
+  history: TimeEntry[];
 }
 
 export interface TimeEntry {
@@ -12,5 +13,5 @@ export interface TimeEntry {
 
 export interface Duration {
   start: Date;
-  end: Date;
+  end?: Date;
 }
